@@ -16,3 +16,8 @@ def when_i_enter_the_account_number_group1(step, account_number):
     form['account_number'] = account_number
     world.form_response = form.submit()
     assert_equal(world.form_response.status_code, 200)
+
+@step(u'I see a balance of "([^"]*)"')
+def then_i_see_a_balance_of_group1(step, expected_balance):
+    assert_in ("Balance: {}".format(expected_balance),
+    world.form_response.text)
