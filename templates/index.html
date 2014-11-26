@@ -2,16 +2,20 @@
 <html>
 
 <head>
-<title>BankApp</title>
+<title>Bank App</title>
 </head>
 
 <body>
+
 <form id="account-form">
-<label>Acocunt Number: </label><input name="account_number"
-type="text"/>
+<label>Acocunt Number: </label>
+<input name="account_number" type="text"/>
 <input type="submit"/>
 </form>
 
-</body>
+{% if balance %}
+Balance: {{ balance }}
+{% endif %}
 
+</body>
 </html>
