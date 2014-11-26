@@ -6,10 +6,12 @@ from nose.tools import assert_equal, assert_in
 from bank.account import Account
 from bank_app import app, BANK
 
-@step(u'I create account "([^"]*)" with balance of "([^"]*)"')
-def i_create_account_with_balance_of_group1(step, account_number, balance):
-    a = Account(account_number, balance)
-    BANK.add_account(a)
+
+@step(u'I create the following account:')
+def i_create_the_following_account(step):
+    for row in step.hashes:
+      a = Account(row['account_number'], row['balance'])
+      BANK.add_account(a)
 
 @step(u'I visit the homepage')
 def i_visit_the_homepage(step):
