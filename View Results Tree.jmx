@@ -31,8 +31,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">20</stringProp>
+        <stringProp name="ThreadGroup.ramp_time"></stringProp>
         <longProp name="ThreadGroup.start_time">1417493992000</longProp>
         <longProp name="ThreadGroup.end_time">1417493992000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -105,14 +105,14 @@
             <stringProp name="1567">10</stringProp>
             <stringProp name="60">60</stringProp>
           </collectionProp>
-          <collectionProp name="-296955420">
-            <stringProp name="1572">15</stringProp>
-            <stringProp name="1572">15</stringProp>
-            <stringProp name="60">60</stringProp>
-          </collectionProp>
           <collectionProp name="-294433756">
             <stringProp name="1598">20</stringProp>
             <stringProp name="1598">20</stringProp>
+            <stringProp name="60">60</stringProp>
+          </collectionProp>
+          <collectionProp name="-297914684">
+            <stringProp name="1567">10</stringProp>
+            <stringProp name="1567">10</stringProp>
             <stringProp name="60">60</stringProp>
           </collectionProp>
           <collectionProp name="85434468">
