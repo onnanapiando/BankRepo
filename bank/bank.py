@@ -1,23 +1,15 @@
-from account import Account
+""" Bank Module """
+
 
 class Bank(object):
+    """ Created Bank Class"""
     def __init__(self):
-      self.accounts = {}
+        self.accounts = {}
 
     def add_account(self, account):
-      self.accounts[account.account_number] = account.balance
+        """ Account Adding Method """
+        self.accounts[account.account_number] = account.balance
 
     def get_account_balance(self, account_number):
-      return self.accounts.get(account_number)
-
-    '''def withdraw(self, account_number, amt_withdraw):
-      if self.accounts.get(account_number) - amt_withdraw:
-          if type(amt_withdraw) == int:
-            new_balance = self.accounts.get(account_number) - amt_withdraw
-            return new_balance
-          #elif type(account_number) != int:
-             #return 'Incorrect account number'
-          else:
-             raise TypeError("Invalid type: {}".format(type(amt_withdraw)))
-      #else:
-          #return 'Transaction Error' '''
+        """ Method that returns account balance """
+        return self.accounts.get(account_number)
