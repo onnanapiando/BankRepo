@@ -1,7 +1,7 @@
 """This is a docstring"""
 from flask import Flask, render_template, request
-from bank.bank import Bank
-from bank.account import Account
+from BankRepo.bank.bank import Bank
+from BankRepo.bank.account import Account
 
 APP = Flask(__name__)
 BANK = Bank()
