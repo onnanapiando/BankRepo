@@ -11,4 +11,4 @@ class Account(object):
     def existing_account(self, account_number):
         """ Check if account exists """
         self.account_number = account_number
-        account_number != 'None'
+        return self.account_number is None
