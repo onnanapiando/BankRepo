@@ -6,7 +6,7 @@ class Bank(object):
     def __init__(self):
         """ Initializer """
         self.accounts = {}
-
+        
     def add_account(self, account):
         """ Account Adding Method """
         self.accounts[account.account_number] = account.balance
