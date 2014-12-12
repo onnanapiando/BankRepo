@@ -4,6 +4,7 @@
 class Bank(object):
     """ Created Bank Class"""
     def __init__(self):
+        """ initializer """
         self.accounts = {}
 
     def add_account(self, account):
