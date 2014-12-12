@@ -16,7 +16,6 @@ def hello_world():
 if __name__ == '__main__':
     import cProfile
 
-    #account = Account('1111', 50)
     BANK.add_account(Account('1111', 50))
     cProfile.run('APP.run(debug=True)', sort='time')
 
