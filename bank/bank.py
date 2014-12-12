@@ -1,6 +1,4 @@
 """ Bank Module """
-
-
 class Bank(object):
     """ Created Bank Class"""
     def __init__(self):
